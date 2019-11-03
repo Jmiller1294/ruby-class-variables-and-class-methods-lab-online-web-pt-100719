@@ -35,7 +35,7 @@ def self.genre_count
   
   @@genres.each do |genre, songs|
     
-   genre[songs] = 0 
+   songs = 0 
    if @@genre_count.include?(genre)
      @@genre_count[genre] = songs += 1
     else
