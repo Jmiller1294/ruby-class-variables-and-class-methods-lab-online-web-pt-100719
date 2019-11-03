@@ -47,9 +47,9 @@ def self.artist_count
 
 @@artists.each do |artist|
     if @@artists.include?(artist)
-     [genre] += 1
+     @@artists[artist] += 1
     else
-      @@genre_count[genre] = 1
+      = 1
    end   
  end
 @@genre_count
