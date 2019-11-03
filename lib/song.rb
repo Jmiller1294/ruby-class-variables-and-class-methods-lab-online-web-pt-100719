@@ -23,36 +23,35 @@ class Song
 
   def self.genres 
     return @@genres.uniq
-end
+  end
 
-def self.artists
-  return @@artists.uniq
-end
+  def self.artists
+    return @@artists.uniq
+  end
 
-def self.genre_count 
+  def self.genre_count 
 
-  
-  @@genres.each do |genre|
-    if @@genre_count.include?(genre)
-     @@genre_count[genre] += 1
-    else
-      @@genre_count[genre] = 1
-   end   
- end
-@@genre_count
-end
+    @@genres.each do |genre|
+      if @@genre_count.include?(genre)
+        @@genre_count[genre] += 1
+      else
+        @@genre_count[genre] = 1
+      end   
+    end
+   @@genre_count
+  end
 
-def self.artist_count
+  def self.artist_count
 
-@@artists.each do |artist|
-    if @@artist_count.include?(artist)
-     @@artist_count[artist] += 1
-    else
-      @@artist_count[artist] = 1
-   end   
- end
-@@artist_count
-end
+    @@artists.each do |artist|
+      if @@artist_count.include?(artist)
+        @@artist_count[artist] += 1
+      else
+        @@artist_count[artist] = 1
+      end   
+    end
+    @@artist_count
+  end
 
 
 end
