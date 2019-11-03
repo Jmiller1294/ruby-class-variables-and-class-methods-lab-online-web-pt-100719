@@ -40,8 +40,9 @@ def self.genre_count
     else
       @@genre_count[genre] = songs
    end   
- @@genre_count
+ 
 end
+
 end
 
 
