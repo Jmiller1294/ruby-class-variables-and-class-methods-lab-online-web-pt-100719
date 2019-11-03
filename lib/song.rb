@@ -33,7 +33,7 @@ end
 def self.genre_count 
 
   
-  @@genres.each do |genre, songs|
+  @@genres.each do |genre|
     
    
    if @@genre_count.include?(genre)
