@@ -36,7 +36,7 @@ def self.genre_count
     songs = 0
    
    if @@genre_count.include?(genre)
-     @genre[songs] += 1
+     @genre += 1
     else
       @@genre_count[genre] = songs
    end   
