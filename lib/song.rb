@@ -49,10 +49,10 @@ def self.artist_count
     if @@artists.include?(artist)
      @@artists[artist] += 1
     else
-      = 1
+      @@artists[artist] = 1
    end   
  end
-@@genre_count
+@@artist_count
 end
 
 
