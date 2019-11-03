@@ -14,6 +14,7 @@ def initialize(name, artist, genre)
   @@count += 1
   @@artists << @artist
   @@genres << @genre
+  @@songs += 1
 end
 
 def self.count
@@ -33,10 +34,10 @@ def self.genre_count
 
   
   @@genres.each do |genre, songs|
-    genre[songs]
+    @@songs = songs 
    
    if @@genre_count.include?(genre)
-     songs += 1
+     @@songs
     else
       @@genre_count[genre] = songs
    end   
